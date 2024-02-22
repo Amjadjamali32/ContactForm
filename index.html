@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Form Submission</title>
+</head>
+<style>
+    body {
+        background-color: rgb(37, 231, 37);
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold mx-4" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-2">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container p-4 my-4 w-50 border rounded shadow-lg p-3">
+            <form name="contact" data-netlify="true" method="POST">
+                <h2 class="text-center fw-bold">Contact us</h2>
+                <div class="form-group my-2">
+                    <label for="exampleInputEmail1" class="fw-bold">Your Name</label>
+                    <input type="text" class="form-control" id="email" name="uemail" placeholder="e.g Amjad Ali" required>
+                </div>
+                <div class="form-group my-2">
+                    <label for="InputPassword" class="fw-bold">Email</label>
+                    <input type="email" class="form-control" id="InputPassword" name="upassword" placeholder="e.g amjadalijamali41@gmail.com" required>
+                </div>
+                <div class="form-group my-2">
+                    <label for="InputText" class="fw-bold">Mobile</label>
+                    <input type="text" class="form-control" id="InputText" name="umobile" placeholder="e.g +923262600358" required>
+                </div>
+                <div class="form-group my-2">
+                    <label for="desc" class="fw-bold">Your Concern</label>
+                    <textarea class="form-control" id="desc" rows="3" name="message" placeholder="e.g How are you?"></textarea>
+                </div>
+                <div class="container text-center my-3">
+                    <button type="submit" class="btn btn-dark px-4">Submit</button>
+                 </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
